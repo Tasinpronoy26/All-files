@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Summary</title>
+</head>
+
+<body>
+
+
+    <h1>Event Summary </h1>
+
+
+    <!-- Add event -->
+
+    <p id="p-text">How are you?</p>
+    <input id="input-field" type="text">
+    <button id="submit-title">Submit</button>
+
+    <br>
+    <br>
+
+    <!-- option 2 call function -->
+
+    <h3 id="on-click">Default Text</h3>
+    <button onclick="onClickButton()">Handle event by onclick</button>
+    
+
+
+
+    <!-- option 4 final -->
+
+    <button id="add-event-listener">Add event listener</button>
+
+
+    <!-- JS -->
+
+    <script>
+        function onClickButton() {
+
+            const onClick = document.getElementById('on-click');
+            onClick.innerText = 'whats up';
+
+        }
+
+        document.getElementById('add-event-listener').addEventListener('click', function () {
+            const addEventListener1 = document.getElementById('on-click');
+            addEventListener1.innerText = 'Hello!!!';
+
+        })
+
+        //option 4 final
+
+        document.getElementById('submit-title').addEventListener('click', function(){
+            const inputField = document.getElementById('input-field');
+            const inputText = inputField.value;
+
+            const p = document.getElementById('p-text');
+            p.innerText = (inputText);
+            inputField.value = '';
+            
+        })
+
+        
+
+
+    </script>
+
+</body>
+
+</html>

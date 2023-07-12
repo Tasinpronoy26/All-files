@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+    <!-- Style -->
+<style>
+.item1 { grid-area: Featured-Merchandising; }
+.item2 { grid-area: Header; }
+.item3 { grid-area: Side-Bar; }
+.item4 { grid-area: Product; }
+.item5 { grid-area: feature2; }
+.item6 { grid-area: feature3; }
+.item7 { grid-area: footer; }
+
+/* .item4{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+/* 
+.item3{
+  height: 500px;
+} */
+
+.grid-container {
+  display: grid;
+  height: 800px;
+  grid-template-areas:
+    'Featured-Merchandising Featured-Merchandising Featured-Merchandising Header Header Header'
+    'Side-Bar Product Product Product Product feature2 '
+    'Side-Bar Product Product Product Product . '
+    'Side-Bar . . . . feature3'
+    'Side-Bar . . . . .'
+    'Side-Bar footer footer footer footer footer';
+  gap: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-container > div {
+  color: white;
+  background-color: black;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+
+
+
+
+<body>
+
+
+<!-- Main -->
+
+
+
+<!-- Parent -->
+
+<div class="grid-container">
+
+  <!-- Child -->
+  <div class="item1">Featured Merchandising</div>
+  <div class="item2">Header</div>
+  <div class="item3">Side Bar</div>  
+  <div class="item4">Product</div>
+  <div class="item5">Feature 2</div>
+  <div class="item6">Feature 3</div>
+  <div class="item7">footer</div>
+  
+
+</div>
+
+
+
+</body>
+</html>

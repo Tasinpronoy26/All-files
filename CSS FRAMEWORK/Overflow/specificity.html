@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        h1{
+            color: wheat;
+            background-color: violet;
+            border: 20px solid gray;
+            color: aqua;
+
+            /* last color is powerful more than first color */
+        }
+        .Name{
+
+            color: red !important; 
+            /* class is powerful than last color */
+
+
+            /* Important is most powerful */
+        }
+
+        #na{
+
+            color: tomato;
+            /* id is powerful than class */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>M name is Tasin -1</h1>
+    <h1>M name is Tasin -2</h1>
+    <h1>M name is Tasin -3</h1>
+    <h1 style="color: bisque;" class="Name" id="na">My name is Tasin -4</h1>
+
+
+    <!-- inline css is powerful than id -->
+    
+</body>
+</html>

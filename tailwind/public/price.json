@@ -1,0 +1,40 @@
+{
+        "pricing_lists": [
+            {
+            "id": 1,
+            "name": "Basic Plan",
+            "description": "This is the basic plan with limited features.",
+            "price": 9.99,
+            "currency": "USD",
+            "features": [
+                "5GB storage",
+                "1 user",
+                "Limited support"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Standard Plan",
+            "description": "This is the standard plan with more features than the basic plan.",
+            "price": 19.99,
+            "currency": "USD",
+            "features": [
+                "20GB storage",
+                "5 users",
+                "Priority support"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Premium Plan",
+            "description": "This is the premium plan with all the features.",
+            "price": 49.99,
+            "currency": "USD",
+            "features": [
+                "Unlimited storage",
+                "Unlimited users",
+                "24/7 support"
+            ]
+        }
+    ]
+}

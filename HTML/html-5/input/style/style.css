@@ -1,0 +1,179 @@
+.p {
+
+    background-color: cornflowerblue;
+    height: 800px;
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        "f f f h h h"
+        "s p p p p f2"
+        "s p p p p ."
+        "s . . . . f3"
+        "s . . . . ."
+        "foot foot foot foot foot foot";
+}
+
+.foot-flex {
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.abarlo-flex {
+    display: flex;
+    gap: 40px;
+}
+
+.d1 {
+    border: 2px solid red;
+    grid-area: f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d2 {
+    border: 2px solid red;
+    grid-area: h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d3 {
+    border: 2px solid red;
+    grid-area: s;
+    text-align: center;
+}
+
+.d4 {
+    border: 2px solid red;
+    grid-area: p;
+    text-align: center;
+}
+
+.d5 {
+    border: 2px solid red;
+    grid-area: f2;
+    text-align: center;
+}
+
+.d6 {
+    border: 2px solid red;
+    grid-area: f3;
+    text-align: center;
+}
+
+.d7 {
+    border: 2px solid red;
+    grid-area: foot;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+
+
+}
+
+.p2 {
+    background-color: cornflowerblue;
+    height: 400px;
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        "a b c d d d d d d d d d"
+        "e f f f f f f f f f f f"
+        "e g g g g g g g g g g g"
+        "h i i i i i i i i i i i"
+        "j j j k k k k k l l l l"
+        "j j j k k k k k m m m m"
+        "j j j n n n n n n n n n";
+}
+
+.a {
+    border: 2px solid red;
+    grid-area: a;
+
+}
+
+.b {
+    border: 2px solid red;
+    grid-area: b;
+
+}
+
+.c {
+    border: 2px solid red;
+    grid-area: c;
+
+}
+
+.d {
+    border: 2px solid red;
+    grid-area: d;
+
+}
+
+.e {
+    border: 2px solid red;
+    grid-area: e;
+
+}
+
+.f {
+    border: 2px solid red;
+    grid-area: f;
+
+}
+
+.g {
+    border: 2px solid red;
+    grid-area: g;
+
+}
+
+.h {
+    border: 2px solid red;
+    grid-area: h;
+
+}
+
+.i {
+    border: 2px solid red;
+    grid-area: i;
+
+}
+
+.j {
+    border: 2px solid red;
+    grid-area: j;
+
+}
+
+.k {
+    border: 2px solid red;
+    grid-area: k;
+
+}
+
+.l {
+    border: 2px solid red;
+    grid-area: l;
+
+}
+
+.m {
+    border: 2px solid red;
+    grid-area: m;
+
+}
+
+.n {
+    border: 2px solid red;
+    grid-area: n;
+
+}

@@ -1,0 +1,45 @@
+.header {
+    background-image: url('../Image/cristiano-ronaldo-portugal-5-june-2022.jpg');
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#CR1{
+
+    color: brown;
+    text-align: left ;
+    border: 20px;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#CR{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.pro{
+
+    background-color: white;
+    box-shadow: 10px 5px 8px gray;
+    color: brown;
+    border: 2px solid gray ;
+
+    padding: 10px;
+    margin: 20px;
+
+
+}
+.green{
+    color: rgb(0, 43, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+}
+
+#CR3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+}

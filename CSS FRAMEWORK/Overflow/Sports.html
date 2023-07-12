@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .bat{
+        width: 200px;
+        height: 200px;
+        transition: transform 0.5s ease-in
+      }
+
+      .field{
+        width: 1000px;
+        height: 500px;
+        border: 2px solid red;
+      }
+
+      .field:hover .bat{
+        transform: rotate(-120deg);
+        transform-origin: bottom right;
+      }
+      .ball{
+
+        width: 20px;
+        height: 20px;
+        border: 1px solid red;
+        background-color: red;
+        border-radius: 10px;
+        position: relative;
+        left: 158px;
+        top: 200px;
+        transition: transform 1s ease-out 0.5s;
+      }
+      .field:hover .ball{
+
+        transform: translate(500px, -100px);
+      }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <img  class="bat" src="image/baseball-bat-20651.png" alt="">
+        <div class="ball"></div>
+    </div>
+    
+</body>
+</html>

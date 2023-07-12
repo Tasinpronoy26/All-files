@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Box</title>
+</head>
+<body>
+
+    <h1> Cristiano Ronaldo</h1>
+
+    <div id="comment-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorum ipsa autem rerum, nesciunt, ab delectus assumenda tenetur reiciendis commodi quod necessitatibus? Optio animi non, minus odio veniam et voluptatibus!</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam vel, excepturi, recusandae modi qui quae odio nostrum necessitatibus at obcaecati illum. Enim dolorum molestiae minima animi itaque exercitationem vitae temporibus.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deserunt earum magni consequatur sapiente est soluta qui dolore reprehenderit nihil similique vitae esse, aliquid aperiam exercitationem ea molestiae repudiandae? Veritatis.</p>
+    </div>
+
+    <textarea name="" id="text-area" cols="50" rows="10"></textarea>
+    <br>
+    <button id="btn-post">POST</button>
+
+
+
+
+    <!-- JS -->
+    <script>
+
+        // step- 1 add event listener to the post button
+
+        document.getElementById('btn-post').addEventListener('click', function(){
+
+            // step- 2 get the comment
+
+            const textArea = document.getElementById('text-area');
+            const newComment = textArea.value;
+
+            //step-3 
+            const commentContainer = document.getElementById('comment-container');
+
+            const p = document.createElement('p');
+            p.innerText = newComment;
+
+            commentContainer.appendChild(p);
+
+            //step-4 clear the text
+
+            textArea.value = '';
+
+        
+
+        })
+    </script>
+    
+</body>
+</html>

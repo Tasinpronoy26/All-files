@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Of JS</title>
+</head>
+
+<body>
+
+    <!-- Click/On click -->
+
+    <h1>Event of JS</h1>
+    <button onclick="console.log(8)">Click</button>
+    <button onclick="console.log('Done')">Submit</button>
+    <br>
+
+    <!-- Option 1 -->
+    <!-- Directly -->
+
+    <button onclick="document.body.style.backgroundColor = 'red'">Red</button>
+
+    <!-- Option 2 ******** -->
+    <!-- function call -->
+    <button onclick="makeBlue()">Blue</button>
+
+    <!-- Option 3 -->
+    <button id="yellow-title">Yellow</button>
+
+    <!-- Option 3 another -->
+
+    <button id="purple-title">purple</button>
+
+
+    <!-- option 4 -->
+    <button id="green-title">green</button>
+
+    <!-- Option 4 another -->
+
+    <button id="pink-title">Pink</button>
+
+
+    <!-- option 4 final -->
+
+    <button id="orange-title">orange</button>
+
+
+
+
+
+
+
+    <!-- JS -->
+
+    <!-- Option 2 -->
+    <script>
+        function makeBlue (){
+            document.body.style.backgroundColor = 'blue';
+        }
+    </script>
+
+    <!-- option 3 -->
+    <script src="js/event.js"></script>
+</body>
+
+</html>
